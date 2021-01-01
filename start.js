@@ -34,10 +34,10 @@ const KAFKA_CONSUMER_GROUP_ID = process.env.KAFKA_CONSUMER_GROUP_ID || config.ka
 const kafka = new Kafka({
   clientId: KAFKA_CLIENT_ID,
   brokers: [KAFKA_BROKERS],
-  authenticationTimeout: KAFKA_AUTHENTICATION_TIMEOUT,
-  reauthenticationThreshold: KAFKA_REAUTHENTICATION_THRESHOLD,
-  connectionTimeout: KAFKA_CONNECTION_TIMEOUT,
-  requestTimeout: KAFKA_REQUEST_TIMEOUT,
+  authenticationTimeout: parseInt(KAFKA_AUTHENTICATION_TIMEOUT),
+  reauthenticationThreshold: parseInt(KAFKA_REAUTHENTICATION_THRESHOLD),
+  connectionTimeout: parseInt(KAFKA_CONNECTION_TIMEOUT),
+  requestTimeout: parseInt(KAFKA_REQUEST_TIMEOUT),
   ssl: true,
   sasl: {
     mechanism: KAFKA_MECHANISM,
