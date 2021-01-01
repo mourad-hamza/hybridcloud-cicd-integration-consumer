@@ -114,7 +114,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
 # Environements configurations
 configs/config.dev.js
 configs/config.js
-start.env.sh
+
+Dockerfile
+.dockerignore
+.gitignore

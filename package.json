@@ -1,7 +1,9 @@
 {
     "name": "hybridcloud-cicd-integration-consumer",
     "version": "0.0.1",
-    "description": "hybridcloud-cicd-integration-consumer",
+    "description": "Hybrid Cloud CI/CD Integration actions consumer",
+    "author": "MOURAD Hamza, https://mourad-hamza.medium.com | https://www.linkedin.com/in/hamza-mourad",
+    "license": "Apache License",
     "scripts": {
         "start": "node start"
     },
