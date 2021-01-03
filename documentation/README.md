@@ -32,21 +32,21 @@ spec:
         name: consumer
         env:
           - name: JENKINS_URI
-            value: http://fqdn-to-my-jenkins:8080
+            value: "http://fqdn-to-my-jenkins:8080"
           - name: KAFKA_CLIENT_ID
-            value: cicd-consumer-sample
+            value: "cicd-consumer-sample"
           - name: KAFKA_BROKERS
-            value: my-brokers:port
+            value: "my-brokers:port"
           - name: KAFKA_AUTHENTICATION_TIMEOUT
-            value: 1000
+            value: "1000"
           - name: KAFKA_REAUTHENTICATION_THRESHOLD
-            value: 10000
+            value: "10000"
           - name: KAFKA_CONNECTION_TIMEOUT
-            value: 1000
+            value: "1000"
           - name: KAFKA_REQUEST_TIMEOUT          
-            value: 30000
+            value: "30000"
           - name: KAFKA_MECHANISM
-            value: scram-sha-256
+            value: "scram-sha-256"
           - name: KAFKA_USERNAME
             valueFrom:
               secretKeyRef:
@@ -58,9 +58,9 @@ spec:
                 name: hybridcloud-cicd-integration-consumer
                 key: KAFKA_PASSWORD
           - name: KAFKA_TOPIC
-            value: my-cicd-topic
+            value: "my-cicd-topic"
           - name: KAFKA_CONSUMER_GROUP_ID
-            value: my-consumer-group
+            value: "my-consumer-group"
 ```
 ### Heroku
 ```console
