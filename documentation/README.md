@@ -94,3 +94,8 @@ heroku container:release -a $HEROKU_APP web
 | `KAFKA_PASSWORD` | `config.kafkaPassword` | Kafka authentication password | `my-kafka-password` |
 | `KAFKA_TOPIC` | `config.kafkaTopic` | Kafka topic | `my-cicd-topic` |
 | `KAFKA_CONSUMER_GROUP_ID` | `config.kafkaConsumerGroupID` | Description ... | `my-consumer-group` |
+
+### Extra NodeJS
+| Environement variables | Config file varialbes | Description | Value sample            |
+---------------------- | ---------------------- | ----------- | ------------
+| `NODE_TLS_REJECT_UNAUTHORIZED` | `N/A` | Enable or disable TLS check | Default value `1` : Enabled or `O` to disable TLS check |
